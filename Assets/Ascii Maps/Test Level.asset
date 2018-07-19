@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0ded5865059534188a8af8f074c088, type: 3}
+  m_Name: Test Level
+  m_EditorClassIdentifier: 
+  asciiDictionary:
+  - asciiCharacter: 32
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 49
+    tilePrefab: {fileID: 1348137059825270, guid: 46fabb078f98b0b49a5811af90d0e997,
+      type: 2}
+  - asciiCharacter: 35
+    tilePrefab: {fileID: 1542915473610514, guid: 9bd55e31b4859144a909706e44c40110,
+      type: 2}
