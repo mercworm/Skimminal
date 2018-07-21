@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0ded5865059534188a8af8f074c088, type: 3}
+  m_Name: General Dictionary
+  m_EditorClassIdentifier: 
+  asciiDictionary:
+  - asciiCharacter: 35
+    tilePrefab: {fileID: 1542915473610514, guid: 9bd55e31b4859144a909706e44c40110,
+      type: 2}
+  - asciiCharacter: 32
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 43
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 45
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 61
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 95
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 65
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 97
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 66
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 98
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 67
+    tilePrefab: {fileID: 1844807293811358, guid: 919334732732ee941984436059fa6d03,
+      type: 2}
+  - asciiCharacter: 99
+    tilePrefab: {fileID: 1308062907228042, guid: 4c3e991a29ab2954bba70a7d8d79c6df,
+      type: 2}
+  - asciiCharacter: 68
+    tilePrefab: {fileID: 1707547569219204, guid: 42a400afe48850c419b8aed5d1c2916d,
+      type: 2}
+  - asciiCharacter: 100
+    tilePrefab: {fileID: 1753534278630578, guid: 434b0813a11ff7640a18d10e0a187c57,
+      type: 2}
+  - asciiCharacter: 69
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 101
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 70
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 102
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 71
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 103
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 72
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 104
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 73
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 105
+    tilePrefab: {fileID: 1348137059825270, guid: 46fabb078f98b0b49a5811af90d0e997,
+      type: 2}
+  - asciiCharacter: 74
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 106
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 75
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 107
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 76
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 108
+    tilePrefab: {fileID: 1336222949626370, guid: 6c08eb4c894dc534e8ee18cca1779824,
+      type: 2}
+  - asciiCharacter: 77
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 109
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 78
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 110
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
+      type: 2}
+  - asciiCharacter: 79
+    tilePrefab: {fileID: 1242856844376156, guid: 17a1f2dcad8984c41b7eb6b674e0c476,
+      type: 2}
+  - asciiCharacter: 111
+    tilePrefab: {fileID: 1348692937943754, guid: ac8984e4b8293844889b1a074a6a20e8,
+      type: 2}
+  - asciiCharacter: 80
+    tilePrefab: {fileID: 1909973906796956, guid: 71aaedc91a65d45478942610e89cfc06,
+      type: 2}
+  - asciiCharacter: 112
+    tilePrefab: {fileID: 1245046259085340, guid: 162d57771e1578b49b39bfba2592596d,
+      type: 2}
+  - asciiCharacter: 81
+    tilePrefab: {fileID: 1242856844376156, guid: 17a1f2dcad8984c41b7eb6b674e0c476,
+      type: 2}
+  - asciiCharacter: 113
+    tilePrefab: {fileID: 1348692937943754, guid: ac8984e4b8293844889b1a074a6a20e8,
+      type: 2}
+  - asciiCharacter: 82
+    tilePrefab: {fileID: 1909973906796956, guid: 71aaedc91a65d45478942610e89cfc06,
+      type: 2}
+  - asciiCharacter: 114
+    tilePrefab: {fileID: 1245046259085340, guid: 162d57771e1578b49b39bfba2592596d,
+      type: 2}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
+  - asciiCharacter: 0
+    tilePrefab: {fileID: 0}
