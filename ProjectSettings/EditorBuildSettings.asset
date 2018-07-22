@@ -5,7 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Rebecka Test.unity
+    guid: 6db78db2f6b1e08468a3ef7de7b055c3
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 84518de66ba563f43b7ade52a8722bec
+  - enabled: 1
+    path: Assets/Scenes/Levels/EdwardsRoom.unity
+    guid: 985ac94ea5361ea4cb8d7c584b768904
+  - enabled: 1
+    path: Assets/Scenes/Levels/Alcimus.unity
+    guid: 38e0bd525ee14694086a41b7850712a6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bingk.unity
+    guid: 922f8f9171ebb8444b3ccb923895a6a2
+  - enabled: 1
+    path: Assets/Scenes/Levels/Elliott.unity
+    guid: 3be19f2d109dfe04a82e74198eb99edd
+  - enabled: 1
+    path: Assets/Scenes/Levels/Florence.unity
+    guid: 1510c2c34f6168e42af8b6cfd9eba2c7
+  - enabled: 1
+    path: Assets/Scenes/Levels/Jenny.unity
+    guid: 93e5ef897f87a63419cb30b6633f0881
+  - enabled: 1
+    path: Assets/Scenes/Levels/Nellie.unity
+    guid: a2e7073e8817e12429c2690a6f08f21e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Philip.unity
+    guid: ec9597e7f3bea5540911d114f4365f42
+  - enabled: 1
+    path: Assets/Scenes/Levels/Ryann.unity
+    guid: dc1936afbd8c7c04a94a61867bcb8a36
+  - enabled: 1
+    path: Assets/Scenes/Levels/Wesley.unity
+    guid: 2211a85eeebe8c946a3a0304ff04602e
   m_configObjects: {}
