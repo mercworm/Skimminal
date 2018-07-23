@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4613689140742380}
+  - component: {fileID: 114159590296834708}
   m_Layer: 0
   m_Name: Furniture_Computer_Large_4
   m_TagString: Untagged
@@ -39,3 +40,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114159590296834708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439440353765104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e0d6fb405c0d546b2046cbb189e9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaces: []
