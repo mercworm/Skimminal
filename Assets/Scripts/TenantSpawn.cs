@@ -10,10 +10,11 @@ public class TenantSpawn : MonoBehaviour {
     public Transform AISpawnPoint;
     public GameObject AICharacter;
 
-    //private void OnEnable()
-    //{
-      //  EventManager.StartListening("OnNewLevel", TimeLeftChange);
-    //}
+    private void OnEnable()
+    {
+        
+        EventManager.StartListening("OnNewLevel", TimeLeftChange);
+    }
 
     // Update is called once per frame
     void Update () {

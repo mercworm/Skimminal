@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 224991447733232792}
   - component: {fileID: 222075743198949180}
   - component: {fileID: 114773396063534600}
-  - component: {fileID: 114805389335158930}
   m_Layer: 5
   m_Name: LevelSelect
   m_TagString: Untagged
@@ -439,9 +438,9 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 114100173559991112}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 114100173559991112}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -464,7 +463,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneNellie
         m_Mode: 1
         m_Arguments:
@@ -490,10 +489,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114079192107937814}
-    m_SelectOnRight: {fileID: 114164343394736700}
+    m_SelectOnUp: {fileID: 114079192107937814}
+    m_SelectOnDown: {fileID: 114164343394736700}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -516,7 +515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneAlcimus
         m_Mode: 1
         m_Arguments:
@@ -668,10 +667,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114100173559991112}
-    m_SelectOnRight: {fileID: 114411957155269408}
+    m_SelectOnUp: {fileID: 114100173559991112}
+    m_SelectOnDown: {fileID: 114411957155269408}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -694,7 +693,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneJenny
         m_Mode: 1
         m_Arguments:
@@ -720,10 +719,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114909562165851812}
-    m_SelectOnRight: {fileID: 114322304589310758}
+    m_SelectOnUp: {fileID: 114909562165851812}
+    m_SelectOnDown: {fileID: 114322304589310758}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -746,7 +745,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneBingk
         m_Mode: 1
         m_Arguments:
@@ -859,10 +858,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114185871721493624}
-    m_SelectOnRight: {fileID: 114370464730542364}
+    m_SelectOnUp: {fileID: 114185871721493624}
+    m_SelectOnDown: {fileID: 114370464730542364}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -885,7 +884,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneWesley
         m_Mode: 1
         m_Arguments:
@@ -911,10 +910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114322304589310758}
-    m_SelectOnRight: {fileID: 114423513785436238}
+    m_SelectOnUp: {fileID: 114322304589310758}
+    m_SelectOnDown: {fileID: 114423513785436238}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -937,7 +936,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneRyann
         m_Mode: 1
         m_Arguments:
@@ -996,10 +995,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114164343394736700}
-    m_SelectOnRight: {fileID: 114909562165851812}
+    m_SelectOnUp: {fileID: 114164343394736700}
+    m_SelectOnDown: {fileID: 114909562165851812}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1022,7 +1021,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: ScenePhilip
         m_Mode: 1
         m_Arguments:
@@ -1048,9 +1047,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 114370464730542364}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114370464730542364}
+    m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
@@ -1074,7 +1073,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneFlorence
         m_Mode: 1
         m_Arguments:
@@ -1234,18 +1233,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114805389335158930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067292687555166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f34a8af7ae59442b774c682130ff22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelSelectMenu: {fileID: 0}
 --- !u!114 &114849146618340166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1319,10 +1306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 114411957155269408}
-    m_SelectOnRight: {fileID: 114185871721493624}
+    m_SelectOnUp: {fileID: 114411957155269408}
+    m_SelectOnDown: {fileID: 114185871721493624}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1345,7 +1332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114805389335158930}
+      - m_Target: {fileID: 0}
         m_MethodName: SceneElliott
         m_Mode: 1
         m_Arguments:
@@ -1844,7 +1831,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1067292687555166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
