@@ -12,7 +12,6 @@ public class TenantSpawn : MonoBehaviour {
 
     private void OnEnable()
     {
-        
         EventManager.StartListening("OnNewLevel", TimeLeftChange);
     }
 
@@ -34,6 +33,7 @@ public class TenantSpawn : MonoBehaviour {
 
     void TimeLeftChange()
     {
+        EventManager.StopListening("OnNewLevel", TimeLeftChange);
         timeLeft -= 3;
     }
 }
