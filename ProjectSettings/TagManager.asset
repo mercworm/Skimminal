@@ -8,6 +8,7 @@ TagManager:
   - Computer
   - FrontDoor
   - EdwardDoor
+  - Door
   layers:
   - Default
   - TransparentFX

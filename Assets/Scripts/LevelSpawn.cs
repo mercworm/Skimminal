@@ -2,18 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class LevelSpawn : MonoBehaviour {
 
-    public GridManager gridManager;
+    //A new event class.
+    [System.Serializable]
+    public class SpawnMapEvent : UnityEvent<string> { }
+
+    [SerializeField]
+    public SpawnMapEvent spawnEvent;
+
+    //The varaibles that hold the string that we will use in the event later.
     private string levelNumber;
     private string currentSceneName;
 
-    public string levelAlcimus, levelBingk, levelEliott, levelFlorence, levelJenny, levelNellie, levelPhilip, levelRyann, levelWesley;
+    public string levelAlcimus, levelBingk, levelEliott, levelFlorence, levelJenny, levelNellie, levelPhilip, levelRyann, levelWesley, levelEdward;
 
+    //We want to call this every time a new level starts.
     private void OnEnable()
     {
         EventManager.StartListening("OnNewLevel", LevelSpawning);
+    }
+
+    //Spawn the level for the first time.
+    private void Start()
+    {
+        LevelSpawning();
     }
 
     //I swear there's a better way to do this, but URGH. This is what I get for using strings.
@@ -21,6 +36,7 @@ public class LevelSpawn : MonoBehaviour {
     //Layout numbers are put in the inspector.
     public void LevelSpawning ()
     {
+        //Get name of the scene, so we can add the correct layout.
         currentSceneName = SceneManager.GetActiveScene().name;
 
         if (currentSceneName == "Alcimus")
@@ -60,8 +76,10 @@ public class LevelSpawn : MonoBehaviour {
             levelNumber = levelWesley;
         }
         else
-            return;
+            levelNumber = levelEdward;
 
-        gridManager.InvokeReadFileIndex(levelNumber);
+        //Spawn event with the correct number. 
+        spawnEvent.Invoke(levelNumber);
+
     }
 }
