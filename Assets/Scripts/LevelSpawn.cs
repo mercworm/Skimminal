@@ -6,18 +6,13 @@ using UnityEngine.Events;
 
 public class LevelSpawn : MonoBehaviour {
 
-    //A new event class.
-    [System.Serializable]
-    public class SpawnMapEvent : UnityEvent<string> { }
-
-    [SerializeField]
-    public SpawnMapEvent spawnEvent;
-
+    public GridManager gridManager;
+    
     //The varaibles that hold the string that we will use in the event later.
-    private string levelNumber;
+    private int levelNumber;
     private string currentSceneName;
 
-    public string levelAlcimus, levelBingk, levelEliott, levelFlorence, levelJenny, levelNellie, levelPhilip, levelRyann, levelWesley, levelEdward;
+    public int levelAlcimus, levelBingk, levelEliott, levelFlorence, levelJenny, levelNellie, levelPhilip, levelRyann, levelWesley, levelEdward;
 
     //We want to call this every time a new level starts.
     private void OnEnable()
@@ -79,7 +74,6 @@ public class LevelSpawn : MonoBehaviour {
             levelNumber = levelEdward;
 
         //Spawn event with the correct number. 
-        spawnEvent.Invoke(levelNumber);
-
+        gridManager.InvokeReadFileIndex(levelNumber);
     }
 }
