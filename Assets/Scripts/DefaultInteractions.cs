@@ -6,7 +6,10 @@ public class DefaultInteractions : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (tag == "Door")
+        {
+
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -15,7 +18,7 @@ public class DefaultInteractions : MonoBehaviour {
         {
             if (collision.gameObject.CompareTag ("Player"))
             {
-
+                EventManager.TriggerEvent("OnExitLevelMenu");
             }
         }
 

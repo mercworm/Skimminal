@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4979016350548806}
-  - component: {fileID: 114899068046407818}
   m_Layer: 0
   m_Name: Door_Edward
   m_TagString: EdwardDoor
@@ -38,9 +37,10 @@ GameObject:
   - component: {fileID: 33935536563236356}
   - component: {fileID: 23702524343123790}
   - component: {fileID: 65069424550167448}
+  - component: {fileID: 114460669175232524}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: EdwardDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,12 +126,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114899068046407818
+--- !u!114 &114460669175232524
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1231789813420660}
+  m_GameObject: {fileID: 1934193045430424}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c155b463f0a374449b338bf86000431, type: 3}

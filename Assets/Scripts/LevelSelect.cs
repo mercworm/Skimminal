@@ -11,10 +11,12 @@ public class LevelSelect : MonoBehaviour {
 
     bool menuActive = false;
     public GameObject levelSelectMenu;
+    public GameObject exitMenu;
 
     void OnEnable ()
     {
         EventManager.StartListening("OnLevelSelectMenu", MenuActive);
+        EventManager.StartListening("OnExitLevelMenu", ExitMenuActive);
     }
 
     //Activates the panel that holds the level select menu.
@@ -25,6 +27,13 @@ public class LevelSelect : MonoBehaviour {
         levelSelectMenu.SetActive (true);
         EventManager.TriggerEvent("OnFreezeMovement");
     }
+
+    public void ExitMenuActive ()
+    {
+        exitMenu.SetActive(true);
+        EventManager.TriggerEvent("OnFreezeMovement");
+    }
+
 
     //Checks if the menu is active.
     //Checks if the player tries to close it.
@@ -94,5 +103,10 @@ public class LevelSelect : MonoBehaviour {
     {
         SceneManager.LoadScene("Elliott");
         EventManager.TriggerEvent("OnNewLevel");
+    }
+
+    public void SceneEdward ()
+    {
+        SceneManager.LoadScene("EdwardsRoom");
     }
 }
