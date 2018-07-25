@@ -941,8 +941,8 @@ GameObject:
   - component: {fileID: 136675939706841584}
   - component: {fileID: 136580059665805450}
   - component: {fileID: 195473284697134638}
-  - component: {fileID: 114977710106684236}
-  - component: {fileID: 114358765331197144}
+  - component: {fileID: 114039848710101520}
+  - component: {fileID: 114477103258654530}
   m_Layer: 0
   m_Name: AIThirdPersonController
   m_TagString: Untagged
@@ -2488,7 +2488,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114358765331197144
+--- !u!114 &114039848710101520
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2496,18 +2496,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741228835724472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f0bc1a1509c29e4fae34764900c3875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
+  m_JumpPower: 12
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.2
---- !u!114 &114977710106684236
+  m_GroundCheckDistance: 0.1
+--- !u!114 &114477103258654530
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2515,15 +2515,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741228835724472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c5335f0882fe4d478883cc8c58ce906, type: 3}
+  m_Script: {fileID: 11500000, guid: c14ecdd37921d94489306ef105659c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target:
-  - {fileID: 0}
-  - {fileID: 0}
-  Find: Item
+  target: []
+  Find: 
+  movementSpeed: 0
   currentWayPoint: 0
-  waitDelay: 3
+  waitDelay: 0
   fieldOfView: 110
   player: {fileID: 0}
   playerInSight: 0
