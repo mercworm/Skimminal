@@ -16,9 +16,11 @@ MonoBehaviour:
     tilePrefab: {fileID: 1542915473610514, guid: 9bd55e31b4859144a909706e44c40110,
       type: 2}
   - asciiCharacter: 43
-    tilePrefab: {fileID: 100002, guid: f798019d7ee427440909ec006dcd963b, type: 3}
+    tilePrefab: {fileID: 1672402461685934, guid: 652504fc127c829408d34cda318caebb,
+      type: 2}
   - asciiCharacter: 45
-    tilePrefab: {fileID: 100002, guid: f798019d7ee427440909ec006dcd963b, type: 3}
+    tilePrefab: {fileID: 1248980983831440, guid: 1cbf69c4b5b08c943b5178674ef520a0,
+      type: 2}
   - asciiCharacter: 61
     tilePrefab: {fileID: 1231789813420660, guid: 92e037bb20a75ef4080fbc18364b5cc1,
       type: 2}
@@ -341,7 +343,7 @@ MonoBehaviour:
     tilePrefab: {fileID: 1067596218086386, guid: e7e9ddf9517fb754ab08e9d9a020948d,
       type: 2}
   - asciiCharacter: 224
-    tilePrefab: {fileID: 1256569606786586, guid: a7c7ee4ecf9a68c45a100267d7568c38,
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
       type: 2}
   - asciiCharacter: 212
     tilePrefab: {fileID: 1231789813420660, guid: be41d898609ee3046851df193702b7eb,
@@ -353,5 +355,5 @@ MonoBehaviour:
     tilePrefab: {fileID: 1060814240014664, guid: 9eb3309ed753f7b46b541c9b72079565,
       type: 2}
   - asciiCharacter: 32
-    tilePrefab: {fileID: 1542915473610514, guid: 9bd55e31b4859144a909706e44c40110,
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
       type: 2}

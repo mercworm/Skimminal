@@ -15,7 +15,7 @@ public class GridManager : MonoBehaviour
     public AsciiReader asciiReader;
     public FileReader fileReader;
 
-    public Vector3 tileSize;
+    public Vector3 tileSize = Vector3.one;
 
     private static bool created = false;
     public static GridManager instance;
@@ -107,7 +107,8 @@ public class GridManager : MonoBehaviour
                 {
                     validPaths.Add(targetNode, 1); //replace the 1 with a distance if nodes were further apart.
                 }
-                paths[node] = validPaths;
+                if (node != null)
+                    paths[node] = validPaths;
             }
         }
     }
@@ -133,6 +134,10 @@ public class GridManager : MonoBehaviour
     /// <returns>True if target Node is valid.</returns>
     public bool CheckMove(Node currentPos, Direction direction, out Node outNode)
     {
+        outNode = null;
+        if (currentPos == null)
+            return false;
+
         outNode = currentPos; // for safety, don't return null
         //int arrayIndex = System.Array.IndexOf(gridTiles, currentPos);
         //int arrayIndexRow = arrayIndex % gridTiles.GetLength(0);

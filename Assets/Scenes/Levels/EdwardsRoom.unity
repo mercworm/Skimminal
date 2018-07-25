@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -470,6 +470,77 @@ Transform:
   m_PrefabParentObject: {fileID: 4046795459999438, guid: b0941461d41e07a48b69623b401b8e3a,
     type: 2}
   m_PrefabInternal: {fileID: 106672296}
+--- !u!1 &110351841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 110351845}
+  - component: {fileID: 110351844}
+  - component: {fileID: 110351843}
+  - component: {fileID: 110351842}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &110351842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110351841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489753136f4e00d419a7ffb182e03e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asciiMapArray: {fileID: 11400000, guid: 322358827c4019446bcfa6c2db460fb9, type: 2}
+--- !u!114 &110351843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110351841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cf857ffb4b887449e65138d5667169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderSubPath: 
+  fileTypeExtension: .txt
+  filePath: 
+--- !u!114 &110351844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110351841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4a4d20c0ad0bc46924868d9d7b6ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asciiReader: {fileID: 110351842}
+  fileReader: {fileID: 110351843}
+  tileSize: {x: 1, y: 1, z: 1}
+--- !u!4 &110351845
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110351841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &120420904
 Prefab:
   m_ObjectHideFlags: 0
@@ -5598,7 +5669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1412307928}
+      - m_Target: {fileID: 0}
         m_MethodName: InvokeReadFileIndex
         m_Mode: 3
         m_Arguments:
@@ -8122,7 +8193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1317576508
 MonoBehaviour:
@@ -8151,9 +8222,9 @@ MonoBehaviour:
   spawnEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1412307929}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 110351844}
+        m_MethodName: InvokeReadFileIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9052,77 +9123,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4046795459999438, guid: b0941461d41e07a48b69623b401b8e3a,
     type: 2}
   m_PrefabInternal: {fileID: 1410308806}
---- !u!1 &1412307926
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1412307927}
-  - component: {fileID: 1412307930}
-  - component: {fileID: 1412307929}
-  - component: {fileID: 1412307928}
-  m_Layer: 0
-  m_Name: GridManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1412307927
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412307926}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1412307928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412307926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4a4d20c0ad0bc46924868d9d7b6ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asciiReader: {fileID: 1412307930}
-  fileReader: {fileID: 1412307929}
-  tileSize: {x: 0, y: 0, z: 0}
---- !u!114 &1412307929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412307926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cf857ffb4b887449e65138d5667169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  folderSubPath: 
-  fileTypeExtension: .txt
-  filePath: 
---- !u!114 &1412307930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412307926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 489753136f4e00d419a7ffb182e03e61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asciiMapArray: {fileID: 11400000, guid: 322358827c4019446bcfa6c2db460fb9, type: 2}
 --- !u!1001 &1440922597
 Prefab:
   m_ObjectHideFlags: 0

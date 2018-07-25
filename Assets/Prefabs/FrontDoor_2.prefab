@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4979016350548806}
-  - component: {fileID: 65774282031007342}
-  - component: {fileID: 114338969224413784}
+  - component: {fileID: 65300388932405548}
+  - component: {fileID: 114586136976178212}
   m_Layer: 0
-  m_Name: Door_Edward
-  m_TagString: EdwardDoor
+  m_Name: FrontDoor_2
+  m_TagString: FrontDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934193045430424}
   m_Mesh: {fileID: 4300000, guid: f798019d7ee427440909ec006dcd963b, type: 3}
---- !u!65 &65774282031007342
+--- !u!65 &65300388932405548
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -126,7 +126,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114338969224413784
+--- !u!114 &114586136976178212
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

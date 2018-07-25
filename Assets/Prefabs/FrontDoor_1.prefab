@@ -19,8 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4979016350548806}
+  - component: {fileID: 65300388932405548}
+  - component: {fileID: 114586136976178212}
   m_Layer: 0
-  m_Name: Door
+  m_Name: FrontDoor_1
   m_TagString: FrontDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,11 +38,9 @@ GameObject:
   - component: {fileID: 4146208190298272}
   - component: {fileID: 33935536563236356}
   - component: {fileID: 23702524343123790}
-  - component: {fileID: 65069424550167448}
-  - component: {fileID: 114428886433886540}
   m_Layer: 0
   m_Name: Door
-  m_TagString: FrontDoor
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,9 +51,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934193045430424}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 4979016350548806}
   m_RootOrder: 0
@@ -113,25 +113,25 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934193045430424}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65069424550167448
+  m_Mesh: {fileID: 4300000, guid: f798019d7ee427440909ec006dcd963b, type: 3}
+--- !u!65 &65300388932405548
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934193045430424}
+  m_GameObject: {fileID: 1231789813420660}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114428886433886540
+--- !u!114 &114586136976178212
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934193045430424}
+  m_GameObject: {fileID: 1231789813420660}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c155b463f0a374449b338bf86000431, type: 3}

@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4446813374744898}
   - component: {fileID: 33568824991457690}
   - component: {fileID: 23177022357626190}
-  - component: {fileID: 65740954123560098}
-  - component: {fileID: 114146939495767462}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -38,6 +36,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4996474712201972}
+  - component: {fileID: 65297911663937992}
+  - component: {fileID: 114072805516779362}
   m_Layer: 0
   m_Name: Door_1
   m_TagString: Door
@@ -52,8 +52,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1418519960061944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 0.25}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 4996474712201972}
   m_RootOrder: 0
@@ -113,25 +113,25 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1418519960061944}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65740954123560098
+  m_Mesh: {fileID: 4300000, guid: f798019d7ee427440909ec006dcd963b, type: 3}
+--- !u!65 &65297911663937992
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1418519960061944}
+  m_GameObject: {fileID: 1672402461685934}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114146939495767462
+--- !u!114 &114072805516779362
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1418519960061944}
+  m_GameObject: {fileID: 1672402461685934}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c155b463f0a374449b338bf86000431, type: 3}
