@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Item
   - Computer
+  - FrontDoor
+  - EdwardDoor
+  - Door
   layers:
   - Default
   - TransparentFX

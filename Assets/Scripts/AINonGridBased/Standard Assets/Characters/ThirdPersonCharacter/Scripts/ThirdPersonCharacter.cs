@@ -29,8 +29,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
+        private void OnDisable()
+        {
+            m_MoveSpeedMultiplier = 0;
+        }
 
-		void Start()
+        private void OnEnable()
+        {
+            m_MoveSpeedMultiplier = 1;
+        }
+
+        void Start()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
