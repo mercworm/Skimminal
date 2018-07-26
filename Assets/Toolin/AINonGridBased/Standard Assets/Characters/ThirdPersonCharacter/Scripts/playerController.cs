@@ -27,6 +27,9 @@ public class playerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);       
         rB.AddForce(movement * speed);
         transform.rotation = (Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, movement.normalized, rotSpeed * Time.deltaTime, 0)));
+
+        
+
     }
 
 
