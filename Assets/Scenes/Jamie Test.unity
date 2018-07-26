@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2265,9 +2265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e0144067da2d04db9bf54ad338347b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asciiReader: {fileID: 329159860}
-  fileReader: {fileID: 329159859}
-  tileSize: {x: 1, y: 1, z: 1}
 --- !u!114 &329159859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2279,8 +2276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594c21db9dc422d4288c81ceb85acffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  folderSubPath: 
-  fileTypeExtension: .txt
 --- !u!114 &329159860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,7 +2287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d306d152ad11a40b1b485a07820828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asciiMapArray: {fileID: 11400000, guid: 322358827c4019446bcfa6c2db460fb9, type: 2}
 --- !u!4 &329159861
 Transform:
   m_ObjectHideFlags: 0
