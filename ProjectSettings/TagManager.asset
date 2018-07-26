@@ -9,6 +9,7 @@ TagManager:
   - FrontDoor
   - EdwardDoor
   - Door
+  - PlayableAudio
   layers:
   - Default
   - TransparentFX

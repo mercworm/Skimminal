@@ -7,6 +7,7 @@ using System.IO;
 
 public class InventoryOverSeer : MonoBehaviour
 {
+    public ScriptableItemCollection sIC;
     public GameObject[] itemLocations;
     public ScriptableItem[] items;
     public ScriptableItem[] assignItems;
@@ -21,27 +22,29 @@ public class InventoryOverSeer : MonoBehaviour
     {
         levelName = SceneManager.GetActiveScene().name;
         Computer = GameObject.FindGameObjectWithTag("Computer");
-        assignItems = GetAllInstances<ScriptableItem>(); //gets all instances of the files from data
+        assignItems = sIC.sI;
         itemLocations = GameObject.FindGameObjectsWithTag("Item");
+        items = new ScriptableItem[itemLocations.Length];
 
         for (int i = 0; i < assignItems.Length; i++)
         {
-            if (assignItems[i].name == (levelName + assignItems[i].name.Remove(0, levelName.Length))) // checks if the name of the item is equal to the level name + plus the item removing the level name off it
+            if (assignItems[i].name.StartsWith(levelName)) // checks if the name of the item is equal to the level name + plus the item removing the level name off it
             {           
                 itemLocations[index].GetComponent<Inventory>().Items[0] = assignItems[i]; //applies that item to the item location index
                 items[index] = itemLocations[index].GetComponent<Inventory>().Items[0]; // applies to the overseers data
                 index++; //seperate index for applying to itemlocations 
             }    
         }
+   
     }
     
     public void ItemsCurrentLocations()
     {
         if (Computer.GetComponent<Computer>().hasUploaded == true)
         {
-            for (int i = 0; i < items.Length; i++)
+            for (int i = 0; i < itemLocations.Length; i++)
             {
-                if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[i].name && Computer.GetComponent<Inventory>().Items[0].winCondition == true)
+                if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[0].name && Computer.GetComponent<Inventory>().Items[0].winCondition == true)
                 //Checks if all items in the list are the same as their string locations and if the uploaded item to the computer has the winCondition
                 {
                     Debug.Log("All in place");
@@ -61,18 +64,7 @@ public class InventoryOverSeer : MonoBehaviour
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T[] GetAllInstances<T>() where T : ScriptableObject
-    {
-        string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name, new[] {"Assets/Toolin/Data"});  //FindAssets uses tags check and find in file location
-        T[] a = new T[guids.Length];
-        for (int i = 0; i < guids.Length; i++)         //probably could get optimized 
-        {
-            string path = AssetDatabase.GUIDToAssetPath(guids[i]);
-            a[i] = AssetDatabase.LoadAssetAtPath<T>(path);
-        }
-
-        return a;       
-    }
+   
 }
 
 /*
