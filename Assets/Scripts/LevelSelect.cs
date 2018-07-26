@@ -30,8 +30,19 @@ public class LevelSelect : MonoBehaviour {
 
     public void ExitMenuActive ()
     {
-        exitMenu.SetActive(true);
-        EventManager.TriggerEvent("OnFreezeMovement");
+        if (menuActive == false)
+        {
+            menuActive = true;
+            exitMenu.SetActive(true);
+            EventManager.TriggerEvent("OnFreezeMovement");
+        }
+        else
+        {
+            exitMenu.SetActive(true);
+            EventManager.TriggerEvent("OnFreezeMovement");
+            menuActive = false;
+        }
+
     }
 
 
@@ -107,6 +118,11 @@ public class LevelSelect : MonoBehaviour {
 
     public void SceneEdward ()
     {
+        var playerObject = GameObject.FindGameObjectWithTag("Player");
+        var pO = playerObject.GetComponent<InventoryOverSeer>();
+        pO.ItemsCurrentLocations();
+
         SceneManager.LoadScene("EdwardsRoom");
+        
     }
 }
