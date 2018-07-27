@@ -12,24 +12,19 @@ public class playerController : MonoBehaviour
     private Rigidbody rB;
     public int speed;
 
-
     void Start()
     {
         rB = GetComponent<Rigidbody>();
     }
 
-
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
+    
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);       
         rB.AddForce(movement * speed);
         transform.rotation = (Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, movement.normalized, rotSpeed * Time.deltaTime, 0)));
-
-        
-
     }
 
 

@@ -140,7 +140,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1068177692834462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7e89e2705930b024ca5eac8e119f1b9d, type: 2}
   m_CullingMode: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   rotSpeed: 1
-  speed: 10
+  speed: 50
 --- !u!114 &114704139774687524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba206b84d63dd44d874ee14fe7a5f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sIC: {fileID: 11400000, guid: 2a2039ca9f93dc14584a8b5e636a978e, type: 2}
   itemLocations: []
   items: []
   assignItems: []
@@ -207,7 +208,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1068177692834462}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3129a344eea24ec479607aca293c8539, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.41530538
