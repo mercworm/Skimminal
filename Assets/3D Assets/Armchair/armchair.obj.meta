@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 39c64ffbe16fbe34cb6d6fd9e35e19bd
+guid: 159f558ba6783f4408f4d5404ff75107
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: armchair
+    100000: Armchair
     100002: //RootNode
-    400000: armchair
+    400000: Armchair
     400002: //RootNode
     2100000: palette
-    2300000: armchair
-    3300000: armchair
-    4300000: armchair
+    2300000: Armchair
+    3300000: Armchair
+    4300000: Armchair
   externalObjects:
   - first:
       type: UnityEngine:Material

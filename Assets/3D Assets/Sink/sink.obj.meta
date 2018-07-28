@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ca4f4200e14e11498a8e4b9ee3d0aa3
+guid: 0506be309c6358240af766db1aaf8270
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -11,12 +11,7 @@ ModelImporter:
     2300000: sink
     3300000: sink
     4300000: sink
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: palette
-    second: {fileID: 2100000, guid: b352ac2d05de9e64b97ef55c160dd9e0, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

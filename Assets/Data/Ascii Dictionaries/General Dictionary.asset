@@ -346,6 +346,9 @@ MonoBehaviour:
     tilePrefab: {fileID: 1068177692834462, guid: abe3a3c0bce867c4aae6195e1e76f5f0,
       type: 2}
   - asciiCharacter: 212
+    tilePrefab: {fileID: 1159814714650762, guid: 199f1eadf2c59ce4ba3909b3bd336656,
+      type: 2}
+  - asciiCharacter: 244
     tilePrefab: {fileID: 1231789813420660, guid: be41d898609ee3046851df193702b7eb,
       type: 2}
   - asciiCharacter: 214

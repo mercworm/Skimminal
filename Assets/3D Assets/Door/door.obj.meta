@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: f798019d7ee427440909ec006dcd963b
+guid: 8db71bf24c5143c418fa3fd66eef1b44
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: door
+    100000: Door
     100002: //RootNode
-    400000: door
+    400000: Door
     400002: //RootNode
     2100000: palette
-    2300000: door
-    3300000: door
-    4300000: door
+    2300000: Door
+    3300000: Door
+    4300000: Door
   externalObjects:
   - first:
       type: UnityEngine:Material

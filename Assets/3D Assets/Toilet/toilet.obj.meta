@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c662a8493e8adac4bb8edc44eaf5b179
+guid: 3cbcd24fcd537834ca19285a5e0ad516
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -11,12 +11,7 @@ ModelImporter:
     2300000: toilet
     3300000: toilet
     4300000: toilet
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: palette
-    second: {fileID: 2100000, guid: b352ac2d05de9e64b97ef55c160dd9e0, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

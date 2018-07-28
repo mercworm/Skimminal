@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90cddcf5a884bb141b255412da7d1faa
+guid: 4b41c44f4446bb8418a9c4bfc3a19a50
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -11,12 +11,7 @@ ModelImporter:
     2300000: wardrobe
     3300000: wardrobe
     4300000: wardrobe
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: palette
-    second: {fileID: 2100000, guid: b352ac2d05de9e64b97ef55c160dd9e0, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
