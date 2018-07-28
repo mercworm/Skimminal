@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Items:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f8c01957b6b06d04ba7eb51ae9d76455, type: 2}
   activateLocation: 0
   Mylocation: 
 --- !u!114 &114296325635382826

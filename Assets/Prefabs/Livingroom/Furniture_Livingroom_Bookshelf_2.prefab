@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4324295199742370}
   - component: {fileID: 65984869592566722}
-  - component: {fileID: 114851707009252704}
   m_Layer: 0
   m_Name: Furniture_Livingroom_Bookshelf_2
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,18 +125,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26341534, y: 2.00341, z: 1}
   m_Center: {x: 0.36829233, y: 0.50170505, z: 0}
---- !u!114 &114851707009252704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1309308443480092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724cca609afa50449888d1c133aaccad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Items:
-  - {fileID: 0}
-  activateLocation: 1
-  Mylocation: 

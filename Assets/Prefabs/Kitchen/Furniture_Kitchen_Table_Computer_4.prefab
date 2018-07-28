@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 23725940183586474}
   m_Layer: 0
   m_Name: table
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4783751069075622}
   m_Layer: 0
   m_Name: table (3)
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items:
   - {fileID: 0}
-  activateLocation: 1
+  activateLocation: 0
   Mylocation: 
 --- !u!135 &135394102064514826
 SphereCollider:

@@ -13,7 +13,10 @@ public class Inventory : MonoBehaviour
     {
         if (activateLocation == true)
         {
-            Mylocation = Items[0].name;
+            if (Items[0] != null)
+            {
+                Mylocation = Items[0].name;
+            }
         }
     }
 

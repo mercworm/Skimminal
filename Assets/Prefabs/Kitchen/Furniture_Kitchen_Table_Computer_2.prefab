@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4989988420094478}
   m_Layer: 0
   m_Name: table (1)
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 23104852814257448}
   m_Layer: 0
   m_Name: table
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items:
   - {fileID: 0}
-  activateLocation: 1
+  activateLocation: 0
   Mylocation: 
 --- !u!114 &114780878084572674
 MonoBehaviour:
