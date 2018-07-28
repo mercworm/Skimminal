@@ -42,27 +42,30 @@ public class playerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.UpArrow))
                 transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
+    
             if (Input.GetKey(KeyCode.DownArrow))
                 transform.Translate(-Vector3.forward * speed * Time.deltaTime);
-
+    
             if (Input.GetKey(KeyCode.LeftArrow))
                 transform.Translate(Vector3.left * speed * Time.deltaTime);
-
+    
             if (Input.GetKey(KeyCode.RightArrow))
                 transform.Translate(-Vector3.left * speed * Time.deltaTime);
         }
     }
 
-    //void Update()
-    //{
-    //    float moveHorizontal = Input.GetAxisRaw("Horizontal");
-    //    float moveVertical = Input.GetAxisRaw("Vertical");
-    //
-    //    Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);       
-    //    rB.AddForce(movement * speed);
-    //    transform.rotation = (Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, movement.normalized, rotSpeed * Time.deltaTime, 0)));
-    //}
+  //void Update()
+  //{
+  //    if (move == true)
+  //    {
+  //        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+  //        float moveVertical = Input.GetAxisRaw("Vertical");
+  //
+  //        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+  //        rB.AddForce(movement * speed);
+  //        transform.rotation = (Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, movement.normalized, rotSpeed * Time.deltaTime, 0)));
+  //    }
+  //}
 
 
     public void OnTriggerStay(Collider col)

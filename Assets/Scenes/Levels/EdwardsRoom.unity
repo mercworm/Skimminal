@@ -2524,7 +2524,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2547,7 +2547,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471798853}
   m_LocalRotation: {x: 0.6239481, y: -0, z: -0, w: 0.78146577}
-  m_LocalPosition: {x: 8.7, y: 10.2, z: -9.1}
+  m_LocalPosition: {x: 8.7, y: 10.2, z: -8.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8359,7 +8359,7 @@ MonoBehaviour:
   levelPhilip: 28
   levelRyann: 31
   levelWesley: 33
-  levelEdward: 11
+  levelEdward: 9
 --- !u!114 &1317576510
 MonoBehaviour:
   m_ObjectHideFlags: 0
