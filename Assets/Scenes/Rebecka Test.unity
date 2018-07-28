@@ -7203,7 +7203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Items:
-  - {fileID: 11400000, guid: f8c01957b6b06d04ba7eb51ae9d76455, type: 2}
+  - {fileID: 0}
   activateLocation: 1
   Mylocation: 
 --- !u!1001 &1110223064
@@ -8715,7 +8715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Items:
-  - {fileID: 11400000, guid: f8c01957b6b06d04ba7eb51ae9d76455, type: 2}
+  - {fileID: 0}
   activateLocation: 1
   Mylocation: 
 --- !u!1001 &1378228251
@@ -12738,7 +12738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Items:
-  - {fileID: 11400000, guid: 9b061455e2f31e147ad61d3882eba7f9, type: 2}
+  - {fileID: 0}
   activateLocation: 1
   Mylocation: 
 --- !u!1001 &1975386901

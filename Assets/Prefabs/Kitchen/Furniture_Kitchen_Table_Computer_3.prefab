@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 65402592938993376}
   - component: {fileID: 135071134702533700}
   - component: {fileID: 114310582392216350}
+  - component: {fileID: 114819373758762436}
   m_Layer: 0
   m_Name: Furniture_Kitchen_Table_Computer_3
   m_TagString: Computer
@@ -340,6 +341,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   surfaces: []
+--- !u!114 &114819373758762436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837962856498734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724cca609afa50449888d1c133aaccad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items: []
+  activateLocation: 1
+  Mylocation: 
 --- !u!135 &135071134702533700
 SphereCollider:
   m_ObjectHideFlags: 1
