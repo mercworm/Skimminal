@@ -87,9 +87,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4919982913158880}
   - component: {fileID: 114415656081136152}
+  - component: {fileID: 114097498624859162}
   - component: {fileID: 65136260922538606}
   - component: {fileID: 135053162830914660}
-  - component: {fileID: 114097498624859162}
   m_Layer: 0
   m_Name: Furniture_Kitchen_Table_Computer_1
   m_TagString: Computer
