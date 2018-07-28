@@ -12,6 +12,25 @@ public class playerController : MonoBehaviour
     private Rigidbody rB;
     public int speed;
 
+    bool move = true;
+
+    private void OnEnable()
+    {
+        EventManager.StartListening("OnFreezeMovement", MovementToggle);
+    }
+
+    public void MovementToggle ()
+    {
+        if (move == true)
+        {
+            move = false;
+        }
+        else
+        {
+            move = true;
+        }
+    }
+
     void Start()
     {
         rB = GetComponent<Rigidbody>();
@@ -19,18 +38,20 @@ public class playerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (move == true)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+                transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.DownArrow))
-            transform.Translate(-Vector3.forward * speed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.DownArrow))
+                transform.Translate(-Vector3.forward * speed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.LeftArrow))
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.RightArrow))
-            transform.Translate(-Vector3.left * speed * Time.deltaTime);
-
+            if (Input.GetKey(KeyCode.RightArrow))
+                transform.Translate(-Vector3.left * speed * Time.deltaTime);
+        }
     }
 
     //void Update()
