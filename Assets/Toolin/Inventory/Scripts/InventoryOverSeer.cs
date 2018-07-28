@@ -18,7 +18,7 @@ public class InventoryOverSeer : MonoBehaviour
     [HideInInspector]
     public int index = 0;
 
-    void Awake()
+    void Start()
     {
         levelName = SceneManager.GetActiveScene().name;
         Computer = GameObject.FindGameObjectWithTag("Computer");
