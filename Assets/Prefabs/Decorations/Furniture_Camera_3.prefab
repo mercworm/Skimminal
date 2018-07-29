@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4177291189784038}
   m_Layer: 0
   m_Name: Furniture_Camera_3
-  m_TagString: Untagged
+  m_TagString: PlayableAudio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

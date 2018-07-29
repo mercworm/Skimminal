@@ -360,3 +360,6 @@ MonoBehaviour:
   - asciiCharacter: 32
     tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
       type: 2}
+  - asciiCharacter: 937
+    tilePrefab: {fileID: 1341527705362776, guid: 8c5ae999b67670f44be8d931104416a6,
+      type: 2}

@@ -21,11 +21,20 @@ public class LevelSelect : MonoBehaviour {
 
     //Activates the panel that holds the level select menu.
     //Freezes the player's movement.
-    void MenuActive ()
+    public void MenuActive ()
     {
-        menuActive = true;
-        levelSelectMenu.SetActive (true);
-        EventManager.TriggerEvent("OnFreezeMovement");
+        if (menuActive == false)
+        {
+            menuActive = true;
+            levelSelectMenu.SetActive(true);
+            EventManager.TriggerEvent("OnFreezeMovement");
+        }
+        else
+        {
+            menuActive = false;
+            levelSelectMenu.SetActive(false);
+            EventManager.TriggerEvent("OnFreezeMovement");
+        }
     }
 
     public void ExitMenuActive ()
@@ -42,7 +51,6 @@ public class LevelSelect : MonoBehaviour {
             EventManager.TriggerEvent("OnFreezeMovement");
             menuActive = false;
         }
-
     }
 
 
