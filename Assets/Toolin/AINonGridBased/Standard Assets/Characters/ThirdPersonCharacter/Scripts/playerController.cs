@@ -17,6 +17,7 @@ public class playerController : MonoBehaviour
     private void OnEnable()
     {
         EventManager.StartListening("OnFreezeMovement", MovementToggle);
+        EventManager.StartListening("OnPlayerSpotted", MovementToggle);
     }
 
     public void MovementToggle ()

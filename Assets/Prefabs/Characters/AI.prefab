@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54618537365063866}
   - component: {fileID: 136708457008766722}
   - component: {fileID: 195610192407654352}
+  - component: {fileID: 114133143702477804}
   - component: {fileID: 114789613635617654}
   - component: {fileID: 114849162384453394}
   m_Layer: 0
@@ -152,6 +153,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114133143702477804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068177692834462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d62225185991048ac41174f8ec0592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114789613635617654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,7 +190,18 @@ MonoBehaviour:
   playerInSight: 0
   whenSpotted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114133143702477804}
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114849162384453394

@@ -16,10 +16,10 @@ MonoBehaviour:
     tilePrefab: {fileID: 1542915473610514, guid: 9bd55e31b4859144a909706e44c40110,
       type: 2}
   - asciiCharacter: 43
-    tilePrefab: {fileID: 1672402461685934, guid: 652504fc127c829408d34cda318caebb,
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
       type: 2}
   - asciiCharacter: 45
-    tilePrefab: {fileID: 1248980983831440, guid: 1cbf69c4b5b08c943b5178674ef520a0,
+    tilePrefab: {fileID: 1662213820173764, guid: 99fa8040870fe8f47838b270ab7f4227,
       type: 2}
   - asciiCharacter: 61
     tilePrefab: {fileID: 1231789813420660, guid: 92e037bb20a75ef4080fbc18364b5cc1,

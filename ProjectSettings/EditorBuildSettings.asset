@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Rebecka Test.unity
     guid: 6db78db2f6b1e08468a3ef7de7b055c3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 84518de66ba563f43b7ade52a8722bec
   - enabled: 1
