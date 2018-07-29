@@ -130,5 +130,13 @@ public class playerController : MonoBehaviour
             }
             MovementToggle();
         }
+
+        if (col.gameObject.CompareTag("EdwardComputer"))
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                EventManager.TriggerEvent("OnEdwardComputer");
+            }
+        }
     }
 }
