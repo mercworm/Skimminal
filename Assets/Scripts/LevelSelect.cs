@@ -47,7 +47,7 @@ public class LevelSelect : MonoBehaviour {
         }
         else
         {
-            exitMenu.SetActive(true);
+            exitMenu.SetActive(false);
             EventManager.TriggerEvent("OnFreezeMovement");
             menuActive = false;
         }

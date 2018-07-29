@@ -87,6 +87,8 @@ public class playerController : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Item"))
         {
+            MovementToggle();
+
             if (col.gameObject.GetComponent<Inventory>().Items[0] != null)
             {
                 itemUI = GameObject.Find(col.gameObject.GetComponent<Inventory>().Items[0].name);
@@ -126,7 +128,7 @@ public class playerController : MonoBehaviour
                 itemUI.transform.GetChild(0).gameObject.SetActive(false); //set the ui to false
                 uiActive = false;
             }
-
+            MovementToggle();
         }
     }
 }

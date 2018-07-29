@@ -213,17 +213,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0711d5816cc7fa4bae961167e67c738, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &396017756
+--- !u!1 &123605313
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 396017760}
-  - component: {fileID: 396017759}
-  - component: {fileID: 396017758}
-  - component: {fileID: 396017757}
+  - component: {fileID: 123605318}
+  - component: {fileID: 123605317}
+  - component: {fileID: 123605316}
+  - component: {fileID: 123605315}
+  - component: {fileID: 123605314}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -231,26 +232,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &396017757
+--- !u!114 &123605314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123605313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 8d72776bcba82204caa557b195aca282, type: 2}
+--- !u!81 &123605315
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 396017756}
+  m_GameObject: {fileID: 123605313}
   m_Enabled: 1
---- !u!124 &396017758
+--- !u!124 &123605316
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 396017756}
+  m_GameObject: {fileID: 123605313}
   m_Enabled: 1
---- !u!20 &396017759
+--- !u!20 &123605317
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 396017756}
+  m_GameObject: {fileID: 123605313}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -264,8 +277,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -281,14 +294,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &396017760
+--- !u!4 &123605318
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 396017756}
+  m_GameObject: {fileID: 123605313}
   m_LocalRotation: {x: 0.6239481, y: -0, z: -0, w: 0.78146577}
-  m_LocalPosition: {x: 8.7, y: 10.2, z: -9.1}
+  m_LocalPosition: {x: 8.7, y: 10.2, z: -8.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
