@@ -8,7 +8,7 @@ public class DefaultInteractions : MonoBehaviour {
     {
         if (tag == "Door")
         {
-
+            EventManager.TriggerEvent("OnPlayerDoor");
         }
     }
 
