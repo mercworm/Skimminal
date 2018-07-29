@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 65711070263728678}
   - component: {fileID: 114119784719660260}
   - component: {fileID: 95297966303675038}
+  - component: {fileID: 114881516895275708}
   m_Layer: 0
   m_Name: Door_2
   m_TagString: Door
@@ -139,7 +140,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: c042609427117d94bb813770dd7b0906, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -158,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &114881516895275708
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248980983831440}
@@ -170,4 +171,4 @@ MonoBehaviour:
   countdown: 0
   doorOpenTime: 3
   doorOpen: 0
-  anim: {fileID: 95251209632048686}
+  anim: {fileID: 0}
