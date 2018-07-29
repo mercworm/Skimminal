@@ -5,15 +5,14 @@ using UnityEngine.AI;
 
 public class SetNavMeshSurfaces : MonoBehaviour
 {
-    public NavMeshSurface[] surfaces;
 
     void Start()
     {
-        surfaces = Object.FindObjectsOfType<NavMeshSurface>();
-        for (int i = 0; i < surfaces.Length; i++)
-        {
-            surfaces[i].BuildNavMesh();
-        }
+        var surfaces = Object.FindObjectsOfType<NavMeshSurface>();
+
+        if (surfaces != null && surfaces.Length > 0)
+            surfaces[surfaces.Length-1].BuildNavMesh();
+        
     }
 }
 
