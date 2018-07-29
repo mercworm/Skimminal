@@ -6,7 +6,7 @@ public class DoorTimer : MonoBehaviour {
 
     public float countdown;
     public float doorOpenTime;
-    public bool doorOpen;
+    public bool doorOpen = false;
 
     public Animator anim;
 
@@ -18,7 +18,7 @@ public class DoorTimer : MonoBehaviour {
     public void DoorAnimations ()
     {
         doorOpen = true;
-        if (countdown == 0)
+        if (countdown <= 0)
         {
             anim.SetTrigger("OpenDoor");
         }
@@ -34,9 +34,10 @@ public class DoorTimer : MonoBehaviour {
         if (doorOpen == true)
         {
             countdown -= Time.deltaTime;
-            if (countdown == 0)
+            if (countdown <= 0)
             {
                 anim.SetTrigger("CloseDoor");
+                doorOpen = false;
             }
         }
 	}

@@ -8,7 +8,11 @@ public class DefaultInteractions : MonoBehaviour {
     {
         if (tag == "Door")
         {
-            EventManager.TriggerEvent("OnPlayerDoor");
+            if (other.gameObject.CompareTag("Player"))
+            {
+                EventManager.TriggerEvent("OnPlayerDoor");
+                Debug.Log("Player triggered door!");
+            }
         }
     }
 

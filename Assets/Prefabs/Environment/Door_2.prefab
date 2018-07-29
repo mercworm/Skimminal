@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4710102400175672}
   - component: {fileID: 65711070263728678}
   - component: {fileID: 114119784719660260}
-  - component: {fileID: 95297966303675038}
-  - component: {fileID: 114881516895275708}
   m_Layer: 0
   m_Name: Door_2
   m_TagString: Door
@@ -40,6 +38,8 @@ GameObject:
   - component: {fileID: 4776376435166572}
   - component: {fileID: 33310781531609810}
   - component: {fileID: 23206543827653232}
+  - component: {fileID: 114718794974214566}
+  - component: {fileID: 95289341758880628}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -128,13 +128,13 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95297966303675038
+--- !u!95 &95289341758880628
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248980983831440}
+  m_GameObject: {fileID: 1460994355116602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c042609427117d94bb813770dd7b0906, type: 2}
@@ -157,18 +157,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c155b463f0a374449b338bf86000431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114881516895275708
+--- !u!114 &114718794974214566
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248980983831440}
+  m_GameObject: {fileID: 1460994355116602}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc668db2ddb6292479b941d58beea019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: 0
-  doorOpenTime: 3
+  doorOpenTime: 5
   doorOpen: 0
-  anim: {fileID: 0}
+  anim: {fileID: 95289341758880628}

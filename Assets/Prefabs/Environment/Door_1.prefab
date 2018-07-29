@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4446813374744898}
   - component: {fileID: 33568824991457690}
   - component: {fileID: 23177022357626190}
+  - component: {fileID: 95706442861542588}
+  - component: {fileID: 114850674216258210}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -38,8 +40,6 @@ GameObject:
   - component: {fileID: 4996474712201972}
   - component: {fileID: 65297911663937992}
   - component: {fileID: 114072805516779362}
-  - component: {fileID: 114165652147226198}
-  - component: {fileID: 95013619924252978}
   m_Layer: 0
   m_Name: Door_1
   m_TagString: Door
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672402461685934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.65, y: 0, z: -4.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4446813374744898}
@@ -128,19 +128,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95013619924252978
+--- !u!95 &95706442861542588
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1672402461685934}
+  m_GameObject: {fileID: 1418519960061944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9c95dabf4bac93941addd7d89577feb6, type: 2}
+  m_Controller: {fileID: 9100000, guid: c042609427117d94bb813770dd7b0906, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -157,18 +157,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c155b463f0a374449b338bf86000431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114165652147226198
+--- !u!114 &114850674216258210
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1672402461685934}
+  m_GameObject: {fileID: 1418519960061944}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc668db2ddb6292479b941d58beea019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: 0
-  doorOpenTime: 3
+  doorOpenTime: 5
   doorOpen: 0
-  anim: {fileID: 95013619924252978}
+  anim: {fileID: 95706442861542588}
