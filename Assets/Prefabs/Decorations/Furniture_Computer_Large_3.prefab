@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 65805996324848784}
   - component: {fileID: 114565777760118562}
   - component: {fileID: 114669658894520118}
+  - component: {fileID: 114840913300994920}
   m_Layer: 0
   m_Name: Furniture_Computer_Large_3
   m_TagString: Computer
@@ -256,3 +257,15 @@ MonoBehaviour:
   uploadTime: 4
   curTime: 0
   loadbar: {fileID: 0}
+--- !u!114 &114840913300994920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953529087644430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c16c4851781a641a51c448d0b1c305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers: []
