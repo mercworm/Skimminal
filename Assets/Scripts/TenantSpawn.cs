@@ -4,36 +4,65 @@ using UnityEngine;
 
 public class TenantSpawn : MonoBehaviour {
 
+    public float startTime;
     public float timeLeft;
     public float keySoundTime;
 
     public Transform AISpawnPoint;
     public GameObject AICharacter;
 
+    public bool spawnGO = false;
+
+    //Start listening to find out when a new level has been started.
     private void OnEnable()
     {
-        EventManager.StartListening("OnNewLevel", TimeLeftChange);
+        EventManager.StartListening("OnTenantCountdown", CountdownStart);
+        EventManager.StartListening("OnLevelComplete", EndEverything);
     }
 
     // Update is called once per frame
     void Update () {
 
-        timeLeft -= Time.deltaTime;
-
-        if (timeLeft == keySoundTime)
+        //Only starts counting down when the new level has spawned.
+        if (spawnGO)
         {
-            //Play Audio clip of the door rattling.
-        }
+            timeLeft -= Time.deltaTime;
 
-        if (timeLeft == 0)
-        {
-            Instantiate(AICharacter, AISpawnPoint);
+            if (timeLeft == keySoundTime)
+            {
+                //Play Audio clip of the door rattling.
+            }
+
+            if (timeLeft == 0)
+            {
+                spawnGO = false;
+                if (AISpawnPoint != null)
+                {
+                    Instantiate(AICharacter, AISpawnPoint);
+                }
+                else
+                {
+                    Debug.LogError("The AI can't find anywhere to spawn!");
+                }
+            }
         }
 	}
 
-    void TimeLeftChange()
+    //Set time left to a default starttime. 
+    //Tell the rest of the script the level has spawned. 
+    void CountdownStart()
     {
-        EventManager.StopListening("OnNewLevel", TimeLeftChange);
-        timeLeft -= 3;
+        timeLeft = startTime;
+        spawnGO = true;
+
+        //Finds the spot where the AI should spawn when the time is up.
+        var AISpawn = GameObject.FindGameObjectWithTag("AISpawn").transform;
+        AISpawnPoint = AISpawn;
+    }
+
+    public void EndEverything ()
+    {
+        spawnGO = false;
+        AISpawnPoint = null;
     }
 }
