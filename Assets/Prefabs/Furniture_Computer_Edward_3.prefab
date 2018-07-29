@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 114568628247869766}
   m_Layer: 0
   m_Name: Furniture_Computer_Edward_3
-  m_TagString: Computer
+  m_TagString: EdwardComputer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

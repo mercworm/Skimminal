@@ -10,6 +10,8 @@ TagManager:
   - EdwardDoor
   - Door
   - PlayableAudio
+  - AISpawn
+  - EdwardComputer
   layers:
   - Default
   - TransparentFX

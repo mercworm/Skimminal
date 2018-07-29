@@ -30,14 +30,16 @@ public class TenantSpawn : MonoBehaviour {
 
             if (timeLeft == keySoundTime)
             {
+                Debug.Log("Key sound should have happened!");
                 //Play Audio clip of the door rattling.
             }
 
-            if (timeLeft == 0)
+            if (timeLeft <= 0)
             {
                 spawnGO = false;
                 if (AISpawnPoint != null)
                 {
+                    Debug.Log("Tried to spawn tenant!");
                     Instantiate(AICharacter, AISpawnPoint);
                 }
                 else

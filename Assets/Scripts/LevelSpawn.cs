@@ -75,5 +75,10 @@ public class LevelSpawn : MonoBehaviour {
 
         //Spawn event with the correct number. 
         gridManager.InvokeReadFileIndex(levelNumber);
+
+        if (currentSceneName != "EdwardsRoom")
+        {
+            EventManager.TriggerEvent("OnTenantCountdown");
+        }
     }
 }
