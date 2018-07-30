@@ -14,18 +14,18 @@ public class DefaultInteractions : MonoBehaviour {
                 Debug.Log("Player triggered door!");
             }
         }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
         if (tag == "FrontDoor")
         {
-            if (collision.gameObject.CompareTag ("Player"))
+            if (other.gameObject.CompareTag("Player"))
             {
                 EventManager.TriggerEvent("OnExitLevelMenu");
             }
         }
+    }
 
+    private void OnCollisionEnter(Collision collision)
+    {
         if (tag == "EdwardDoor")
         {
             if (collision.gameObject.CompareTag ("Player"))
