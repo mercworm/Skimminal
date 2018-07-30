@@ -12,6 +12,7 @@ TagManager:
   - PlayableAudio
   - AISpawn
   - EdwardComputer
+  - TenantNameCanvas
   layers:
   - Default
   - TransparentFX
