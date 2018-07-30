@@ -7,7 +7,8 @@ public class Computer : MonoBehaviour
 {
     public ParticleSystem doneEffect;
 
-    public bool _hasUploaded = false;
+    [SerializeField] 
+    private bool _hasUploaded = false;
     public bool HasUploaded
     {
         get
@@ -21,6 +22,7 @@ public class Computer : MonoBehaviour
 
             if(_hasUploaded)
             {
+                
                 doneEffect.Play();
             }
         }
