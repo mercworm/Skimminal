@@ -173,7 +173,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Sorry! We haven't written this note yet!
+  m_Text: "\r\"Sakura is flat\"\r\nwell I don\u2019t see a problem there do y'all
+    know how troublesome big boobs are? I mean I don\u2019t know because I don\u2019t
+    have any but I\u2019ve SEEN someone live with them ok? And sure they\u2019re good
+    and attractive and stuff but it\u2019s like bad for them because they tear up
+    and can fall off. So what if Sakura is flat she is beautiful. A pink goddess.
+    \r\n"
 --- !u!114 &114433676490380590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -389,7 +394,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 120}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224568106230072710
 RectTransform:

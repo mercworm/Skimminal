@@ -173,7 +173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Sorry! We haven't written this note yet!
+  m_Text: "Sorry! We haven't written this note yet! \nEA Note DLC EXTREME $9.99"
 --- !u!114 &114237521609024304
 MonoBehaviour:
   m_ObjectHideFlags: 1
