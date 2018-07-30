@@ -363,3 +363,15 @@ MonoBehaviour:
   - asciiCharacter: 937
     tilePrefab: {fileID: 1341527705362776, guid: 8c5ae999b67670f44be8d931104416a6,
       type: 2}
+  - asciiCharacter: 210
+    tilePrefab: {fileID: 1373439492663968, guid: 4ccdb16201698cb42beb2bbd769751d5,
+      type: 2}
+  - asciiCharacter: 242
+    tilePrefab: {fileID: 1873396237952142, guid: 8ad78e7e20dafcd418fd449340d01c8d,
+      type: 2}
+  - asciiCharacter: 217
+    tilePrefab: {fileID: 1580938162385892, guid: 4d2e68352677a1045937b06dd7a47a62,
+      type: 2}
+  - asciiCharacter: 249
+    tilePrefab: {fileID: 1538985457608898, guid: 9a647caafb951814698b963bdf2cb44c,
+      type: 2}
