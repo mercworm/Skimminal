@@ -78,7 +78,14 @@ public class LevelSpawn : MonoBehaviour {
 
         if (currentSceneName != "EdwardsRoom")
         {
-            EventManager.TriggerEvent("OnTenantCountdown");
+            StartCoroutine(TenantNameSpawn());
         }
+    }
+
+    public IEnumerator TenantNameSpawn ()
+    {
+        yield return new WaitForSeconds(2);
+        EventManager.TriggerEvent("OnHideTenantName");
+        EventManager.TriggerEvent("OnTenantCountdown");
     }
 }
