@@ -13,6 +13,7 @@ TagManager:
   - AISpawn
   - EdwardComputer
   - TenantNameCanvas
+  - Catnip
   layers:
   - Default
   - TransparentFX
