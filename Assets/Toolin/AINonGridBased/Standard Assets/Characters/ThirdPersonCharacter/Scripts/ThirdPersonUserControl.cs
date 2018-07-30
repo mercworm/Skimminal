@@ -75,7 +75,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     if ((col.GetComponent<Computer>().curTime / 60) >= col.GetComponent<Computer>().uploadTime) //once the current time held is greater than the upload time variable
                     {
                         col.GetComponent<Inventory>().Items[0] = gameObject.GetComponent<Inventory>().Items[0]; //Grabs the item in the player slot                                                                                                              //
-                        col.GetComponent<Computer>().hasUploaded = true;                                        //sets the computer to have been uploaded and turns off the loadbar
+                        col.GetComponent<Computer>().HasUploaded = true;                                        //sets the computer to have been uploaded and turns off the loadbar
                         col.GetComponent<Computer>().loadbar.SetActive(false);
                     }
                 }

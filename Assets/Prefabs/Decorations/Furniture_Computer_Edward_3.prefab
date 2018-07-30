@@ -342,7 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19c160b1b9dc374d82439c8d3b8b302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fakebookPanel: {fileID: 0}
 --- !u!114 &114774520177604954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -354,7 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f482510de23f604e86029331fd96f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  surfaces: []
 --- !u!114 &114796121307545566
 MonoBehaviour:
   m_ObjectHideFlags: 1
