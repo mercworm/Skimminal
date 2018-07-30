@@ -7,7 +7,6 @@ public class EdwardComputer : MonoBehaviour {
     Computer regularComputerScript;
     Inventory inv;
 
-    public GameObject fakebookPanel;
     bool panelActive = false;
 
     private void OnEnable()
@@ -36,7 +35,8 @@ public class EdwardComputer : MonoBehaviour {
     public void Fakebook ()
     {
         panelActive = true;
-        fakebookPanel.SetActive(true);
+        EventManager.TriggerEvent("OnFakebook");
+        Debug.Log("Started Fakebook");
     }
 
     public void ScriptSwitch ()

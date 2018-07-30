@@ -11,7 +11,7 @@ public class InventoryOverSeer : MonoBehaviour
     public GameObject[] itemLocations;
     public ScriptableItem[] items;
     public ScriptableItem[] assignItems;
-    private GameObject Computer;
+    private Computer computer;
 
     [HideInInspector]
     public string levelName;
@@ -21,7 +21,7 @@ public class InventoryOverSeer : MonoBehaviour
     void Start()
     {
         levelName = SceneManager.GetActiveScene().name;
-        Computer = GameObject.FindGameObjectWithTag("Computer");
+        computer = GameObject.FindGameObjectWithTag("Computer").GetComponent<Computer>();
         assignItems = sIC.sI;
         itemLocations = GameObject.FindGameObjectsWithTag("Item");
         items = new ScriptableItem[itemLocations.Length];
@@ -40,11 +40,12 @@ public class InventoryOverSeer : MonoBehaviour
     
     public void ItemsCurrentLocations()
     {
-        if (Computer.GetComponent<Computer>().hasUploaded == true)
+        if (computer != null && computer.HasUploaded == true)
         {
             for (int i = 0; i < itemLocations.Length; i++)
             {
-                if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[0].name && Computer.GetComponent<Inventory>().Items[0].winCondition == true)
+                if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[0].name)
+                // && Computer.GetComponent<Inventory>().Items[0].winCondition == true
                 //Checks if all items in the list are the same as their string locations and if the uploaded item to the computer has the winCondition
                 {
                     Debug.Log("All in place");

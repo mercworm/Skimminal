@@ -5,7 +5,28 @@ using UnityEngine;
 [RequireComponent(typeof(Inventory))]
 public class Computer : MonoBehaviour
 {
-    public bool hasUploaded = false;
+    public ParticleSystem doneEffect;
+
+    [SerializeField] 
+    private bool _hasUploaded = false;
+    public bool HasUploaded
+    {
+        get
+        {
+            return _hasUploaded;
+        }
+
+        set
+        {
+            _hasUploaded = value;
+
+            if(_hasUploaded)
+            {
+                
+                doneEffect.Play();
+            }
+        }
+    }
     public float uploadTime;
     [HideInInspector]
     public float curTime;
@@ -15,5 +36,6 @@ public class Computer : MonoBehaviour
     public void Start()
     {
         loadbar = GameObject.Find("LoadBar");
+        doneEffect = GetComponent<ParticleSystem>();
     }
 }
