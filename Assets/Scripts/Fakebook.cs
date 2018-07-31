@@ -15,16 +15,5 @@ public class Fakebook : MonoBehaviour {
     public void StartFakebook ()
     {
         fakebook.SetActive(true);
-        isOpening = true;
-    }
-
-    private void Update()
-    {
-        if (!isOpening && Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            fakebook.SetActive(false);
-        }
-
-        isOpening = false;
     }
 }
