@@ -22,7 +22,7 @@ public class Computer : MonoBehaviour
 
             if(_hasUploaded)
             {
-                
+                NoteUploaded();
                 doneEffect.Play();
             }
         }
@@ -37,5 +37,10 @@ public class Computer : MonoBehaviour
     {
         loadbar = GameObject.Find("LoadBar");
         doneEffect = GetComponent<ParticleSystem>();
+    }
+
+    public void NoteUploaded ()
+    {
+        //var score = GetComponent<Inventory>().Items[0].
     }
 }

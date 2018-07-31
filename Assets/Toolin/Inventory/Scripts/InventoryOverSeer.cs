@@ -45,7 +45,6 @@ public class InventoryOverSeer : MonoBehaviour
             for (int i = 0; i < itemLocations.Length; i++)
             {
                 if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[0].name)
-                // && Computer.GetComponent<Inventory>().Items[0].winCondition == true
                 //Checks if all items in the list are the same as their string locations and if the uploaded item to the computer has the winCondition
                 {
                     Debug.Log("All in place");

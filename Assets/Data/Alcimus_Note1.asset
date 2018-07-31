@@ -11,4 +11,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efed8973c61fa484e970a0bec83052a2, type: 3}
   m_Name: Alcimus_Note1
   m_EditorClassIdentifier: 
-  winCondition: 0
