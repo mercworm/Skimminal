@@ -20,10 +20,11 @@ public class Computer : MonoBehaviour
         {
             _hasUploaded = value;
 
-            if(_hasUploaded)
+            if(_hasUploaded && onlyOnce)
             {
                 NoteUploaded();
                 doneEffect.Play();
+                onlyOnce = false;
             }
         }
     }
@@ -32,6 +33,7 @@ public class Computer : MonoBehaviour
     public float curTime;
     [HideInInspector]
     public GameObject loadbar;
+    public bool onlyOnce = true;
 
     public void Start()
     {
@@ -41,6 +43,8 @@ public class Computer : MonoBehaviour
 
     public void NoteUploaded ()
     {
-        //var score = GetComponent<Inventory>().Items[0].
+        var note = GetComponent<Inventory>().Items[0].name;
+        ScoreManager.noteName = note;
+        EventManager.TriggerEvent("UpdateRelationships");
     }
 }

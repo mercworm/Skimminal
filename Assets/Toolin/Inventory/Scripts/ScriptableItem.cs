@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item")]
 public class ScriptableItem : ScriptableObject
 {
-
+    public string noteName;
 }
