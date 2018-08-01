@@ -351,6 +351,7 @@ MonoBehaviour:
   uploadTime: 4
   curTime: 0
   loadbar: {fileID: 0}
+  onlyOnce: 1
 --- !u!114 &114780878084572674
 MonoBehaviour:
   m_ObjectHideFlags: 1

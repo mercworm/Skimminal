@@ -40,6 +40,7 @@ public class TenantSpawn : MonoBehaviour {
                 if (AISpawnPoint != null)
                 {
                     Debug.Log("Tried to spawn tenant!");
+                    EventManager.TriggerEvent("OnTenantSpawn");
                     Instantiate(AICharacter, AISpawnPoint);
                 }
                 else

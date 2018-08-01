@@ -821,14 +821,14 @@ RectTransform:
   m_GameObject: {fileID: 167857587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7875, y: 0.7875, z: 0.7875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 519443779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 12.16687, y: -5.9141846}
+  m_AnchoredPosition: {x: 12.16687, y: -5.914154}
   m_SizeDelta: {x: 206.65, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &167857589
@@ -863,7 +863,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit appartment to select level
+  m_Text: Exit apartment to select level
 --- !u!222 &167857590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -997,7 +997,7 @@ RectTransform:
   m_GameObject: {fileID: 200139875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7875, y: 0.7875, z: 0.7875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 519443779}
   m_RootOrder: 1
@@ -1039,8 +1039,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Search the black boxes\n by pressing left and right\n arrow at the same
-    time"
+  m_Text: 'Search the black boxes
+
+    by pressing left and right
+
+    arrow at the same time'
 --- !u!222 &200139878
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8840,6 +8843,7 @@ GameObject:
   - component: {fileID: 1317576509}
   - component: {fileID: 1317576511}
   - component: {fileID: 1317576512}
+  - component: {fileID: 1317576513}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8899,15 +8903,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridManager: {fileID: 110351844}
-  levelAlcimus: 0
-  levelBingk: 6
-  levelEliott: 11
-  levelFlorence: 14
-  levelJenny: 19
-  levelNellie: 23
+  levelAlcimus: 3
+  levelBingk: 7
+  levelEliott: 12
+  levelFlorence: 15
+  levelJenny: 20
+  levelNellie: 24
   levelPhilip: 27
-  levelRyann: 30
-  levelWesley: 32
+  levelRyann: 31
+  levelWesley: 35
   levelEdward: 9
 --- !u!114 &1317576510
 MonoBehaviour:
@@ -8951,6 +8955,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fakebook: {fileID: 844873316}
+--- !u!114 &1317576513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317576505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637763bfbfc9d2f46b741d95dd263f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  litApartment: {fileID: 11400000, guid: 962fd75fb85c0c24e9b299677fe7c690, type: 2}
 --- !u!1001 &1326003113
 Prefab:
   m_ObjectHideFlags: 0
@@ -13540,10 +13556,9 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114063337533284532, guid: e1618eb7492d21245836e17be2a80dad,
-        type: 2}
-      propertyPath: m_UiScaleMode
-      value: 1
+    - target: {fileID: 1243873744192998, guid: e1618eb7492d21245836e17be2a80dad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1618eb7492d21245836e17be2a80dad, type: 2}
@@ -15126,15 +15141,6 @@ Prefab:
     - target: {fileID: 224276385590948488, guid: 68aaa13990761a349ae5270e00dc4eaa,
         type: 2}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114251767155790936, guid: 68aaa13990761a349ae5270e00dc4eaa,
-        type: 2}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894473867088506, guid: 68aaa13990761a349ae5270e00dc4eaa, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

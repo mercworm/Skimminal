@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &114126866933727506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,7 +194,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Sorry! We haven't written this note yet!
+  m_Text: 'There''s an ugly empty spot on my wall, right by the entrance. It''s such
+    an eyesore, I almost try to look away when entering my apartment. I would pay
+    anything to get it away, but finding good art is so very difficult.
+
+
+    Maybe I can commission the young lady in the building to paint something for me.
+    She looks like she could use the money anyway, as is the life of the student. '
 --- !u!114 &114540308468624358
 MonoBehaviour:
   m_ObjectHideFlags: 1

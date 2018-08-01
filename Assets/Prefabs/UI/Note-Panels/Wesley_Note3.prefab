@@ -79,7 +79,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1485342265572390
 GameObject:
   m_ObjectHideFlags: 1
@@ -301,7 +301,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Sorry! We haven't written this note yet!
+  m_Text: 'I wish Philip wouldn''t speak so badly about Jenny''s art all the time.
+    I mean, you can like some things better without HATING things that are not like
+    it. Like I love cats, but I still get excited over pretting a dog.
+
+
+    I guess things are different for him. Anime seems to be pretty important to him
+    after all. He even hides that shrine in his closet. Not that I want to "judge"
+    him or anything, but it''s pretty creepy.'
 --- !u!222 &222088577583936456
 CanvasRenderer:
   m_ObjectHideFlags: 1

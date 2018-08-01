@@ -374,6 +374,7 @@ MonoBehaviour:
   uploadTime: 4
   curTime: 0
   loadbar: {fileID: 0}
+  onlyOnce: 1
 --- !u!135 &135394102064514826
 SphereCollider:
   m_ObjectHideFlags: 1

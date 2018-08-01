@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CatFollow : MonoBehaviour {
 
-    public Transform target; 
+    private GameObject player;
+
+    public Transform target;
     public Vector3 catPosition;
     public float speed;
 	public int maxRange;
@@ -12,13 +14,13 @@ public class CatFollow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //CatFollowing();
+        player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if ((Vector3.Distance(transform.position,target.position)<maxRange))
+		if ((Vector3.Distance(transform.position,player.transform.position)<maxRange))
 		{
 			catFollowNow = true;
 		}

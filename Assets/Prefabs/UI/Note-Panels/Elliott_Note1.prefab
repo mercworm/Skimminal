@@ -95,7 +95,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1929183585190682
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +173,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Sorry! We haven't written this note yet!
+  m_Text: "Experiment 5.2.\n\nI glued his pet hamster to the door using Dr Harrison's
+    Extra Strong Glue. It worked well. I will have to remember it for future reference.
+    \n\nThe hamster squealed, but was unharmed. \nI doubt Philip noticed the missing
+    patches of fur on its back, where I slipped with the scissors. \n\nNext week,
+    Miss Patty's Extreme Home-Fixer Glue."
 --- !u!114 &114186486722016550
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 114840913300994920}
   - component: {fileID: 198538951822738226}
   - component: {fileID: 199682573929791856}
+  - component: {fileID: 135620105814216618}
   m_Layer: 0
   m_Name: Furniture_Computer_Large_3
   m_TagString: Computer
@@ -89,7 +90,7 @@ Transform:
   m_GameObject: {fileID: 1545700177248402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.46, y: 4, z: 0}
-  m_LocalScale: {x: 0, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 4831557545638536}
   m_RootOrder: 1
@@ -259,6 +260,7 @@ MonoBehaviour:
   uploadTime: 4
   curTime: 0
   loadbar: {fileID: 0}
+  onlyOnce: 1
 --- !u!114 &114840913300994920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -271,6 +273,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggers: []
+--- !u!135 &135620105814216618
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953529087644430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 2, y: 0, z: 0}
 --- !u!198 &198538951822738226
 ParticleSystem:
   m_ObjectHideFlags: 1
