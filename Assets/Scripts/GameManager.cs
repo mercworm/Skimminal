@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        PlayerPrefs.DeleteAll();
     }
 
     public void TempGameOver ()

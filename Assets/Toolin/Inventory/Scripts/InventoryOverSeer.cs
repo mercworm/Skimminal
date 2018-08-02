@@ -21,7 +21,6 @@ public class InventoryOverSeer : MonoBehaviour
     void Start()
     {
         levelName = SceneManager.GetActiveScene().name;
-        computer = GameObject.FindGameObjectWithTag("Computer").GetComponent<Computer>();
         assignItems = sIC.sI;
         itemLocations = GameObject.FindGameObjectsWithTag("Item");
         items = new ScriptableItem[itemLocations.Length];
@@ -40,15 +39,20 @@ public class InventoryOverSeer : MonoBehaviour
     
     public void ItemsCurrentLocations()
     {
+        computer = FindObjectOfType<Computer>();
+
         if (computer != null && computer.HasUploaded == true)
         {
-            for (int i = 0; i < itemLocations.Length; i++)
-            {
-                if (itemLocations[i].GetComponent<Inventory>().Mylocation == itemLocations[i].GetComponent<Inventory>().Items[0].name)
-                //Checks if all items in the list are the same as their string locations and if the uploaded item to the computer has the winCondition
-                {
                     Debug.Log("All in place");
                     PlayerPrefs.SetInt(levelName, 1);
+
+            for (int i = 0; i < itemLocations.Length; i++)
+            {
+                var item = itemLocations[i].GetComponent<Inventory>();
+
+                if (item.Mylocation == item.Items[0].name)
+                //Checks if all items in the list are the same as their string locations and if the uploaded item to the computer has the winCondition
+                {
                 }
                 else
                 {

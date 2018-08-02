@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -9,15 +10,9 @@ public class Inventory : MonoBehaviour
     public string Mylocation;
     private List<ScriptableItem> objItems;
 
-    void Start()
+    public void OnEnable()
     {
-        if (activateLocation == true)
-        {
-            if (Items[0] != null)
-            {
-                Mylocation = Items[0].name;
-            }
-        }
+        EventManager.StartListening("DoneLoading", OnSceneLoad);
     }
 
     public void Swap(GameObject ObjectsItem)
@@ -29,6 +24,17 @@ public class Inventory : MonoBehaviour
         objItems[1] = Items[1];
         Items.RemoveAt(1);
         objItems.RemoveAt(0);
+    }
+
+    public void OnSceneLoad()
+    {
+        if (activateLocation == true)
+        {
+            if (Items[0] != null)
+            {
+                Mylocation = Items[0].name;
+            }
+        }
     }
 }
 /*

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -828,7 +828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 12.16687, y: -5.914154}
+  m_AnchoredPosition: {x: 12.16687, y: -5.9140625}
   m_SizeDelta: {x: 206.65, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &167857589
@@ -5880,6 +5880,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 224506318470706236, guid: 6cebbf9944b2b2b4193d9abca8f6b400,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 33.80005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cebbf9944b2b2b4193d9abca8f6b400, type: 2}
   m_IsPrefabParent: 0
@@ -8153,7 +8158,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1242653637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.03, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1741130980}
@@ -8844,6 +8849,7 @@ GameObject:
   - component: {fileID: 1317576511}
   - component: {fileID: 1317576512}
   - component: {fileID: 1317576513}
+  - component: {fileID: 1317576514}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8903,15 +8909,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridManager: {fileID: 110351844}
-  levelAlcimus: 3
-  levelBingk: 7
-  levelEliott: 12
-  levelFlorence: 15
-  levelJenny: 20
-  levelNellie: 24
+  levelAlcimus: 0
+  levelBingk: 6
+  levelEliott: 11
+  levelFlorence: 14
+  levelJenny: 19
+  levelNellie: 23
   levelPhilip: 27
-  levelRyann: 31
-  levelWesley: 35
+  levelRyann: 30
+  levelWesley: 32
   levelEdward: 9
 --- !u!114 &1317576510
 MonoBehaviour:
@@ -8943,6 +8949,7 @@ MonoBehaviour:
   AICharacter: {fileID: 1068177692834462, guid: bbbcddc43a32ab248a3be13c50a4f9d3,
     type: 2}
   spawnGO: 0
+  spawned: 1
 --- !u!114 &1317576512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8967,6 +8974,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   litApartment: {fileID: 11400000, guid: 962fd75fb85c0c24e9b299677fe7c690, type: 2}
+--- !u!114 &1317576514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317576505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f0b6f6c9f77954bae74cb2efa2b699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 11400000, guid: d1823720d329125498a2a295c37d2578, type: 2}
 --- !u!1001 &1326003113
 Prefab:
   m_ObjectHideFlags: 0
@@ -14547,7 +14566,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -14581,7 +14600,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2040331811}
   m_LocalRotation: {x: 0.6239481, y: -0, z: -0, w: 0.78146577}
-  m_LocalPosition: {x: 8.7, y: 10.2, z: -8.23}
+  m_LocalPosition: {x: 8.45, y: 10.2, z: -8.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15151,6 +15170,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1691561421064184, guid: 6cebbf9944b2b2b4193d9abca8f6b400,
     type: 2}
   m_PrefabInternal: {fileID: 796948816}
+--- !u!114 &2114961497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114961492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acbd0970b228ff4692b32d2ffa0d96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2133065845
 Prefab:
   m_ObjectHideFlags: 0

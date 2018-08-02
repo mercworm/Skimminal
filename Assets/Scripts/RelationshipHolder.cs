@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu()]
 public class RelationshipHolder : ScriptableObject {
 
     public float AlBi;
@@ -47,5 +48,10 @@ public class RelationshipHolder : ScriptableObject {
     public float PhWe;
 
     public float RyWe;
+
+    public void ResetPoints()
+    {
+
+    }
 
 }

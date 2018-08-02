@@ -28,7 +28,7 @@ public class CatFollow : MonoBehaviour {
 		if (catFollowNow == true) {
 			catPosition = transform.position;
 			target = GameObject.FindWithTag ("Catnip").transform;
-			transform.position = Vector3.MoveTowards (catPosition, target.transform.position, speed);
+			transform.position = Vector3.MoveTowards (catPosition, target.transform.position, speed * Time.deltaTime);
 
 			transform.LookAt (target);
 		}

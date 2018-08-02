@@ -40,7 +40,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 float h = CrossPlatformInputManager.GetAxis("Horizontal");
                 float v = CrossPlatformInputManager.GetAxis("Vertical");
                 bool crouch = Input.GetKey(KeyCode.C);
-                m_Character.Move(m_Move, crouch, m_Jump);
+                m_Character.Move(m_Move * Time.deltaTime, crouch, m_Jump);
                 if (m_Cam != null)
                 {
                     // calculate camera relative direction to move:

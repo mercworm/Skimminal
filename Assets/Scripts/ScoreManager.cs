@@ -13,6 +13,11 @@ public class ScoreManager : MonoBehaviour {
         EventManager.StartListening("UpdateRelationships", CheckName);
     }
 
+    private void Start()
+    {
+        points.ResetPoints();
+    }
+
     //This function takes care of updating all of the relationship points, depending on which note was posted. 
     //It also notifies the Fakebook script, so the panels are updated correctly.
     public void CheckName ()

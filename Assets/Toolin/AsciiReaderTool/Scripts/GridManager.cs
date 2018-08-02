@@ -91,7 +91,8 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
-        //Debug.Log(gridTiles.Length);
+        EventManager.TriggerEvent("DoneLoading");
+        Debug.Log("done");
 
         //Populate a Dictionary with paths
         foreach (Node node in gridTiles)

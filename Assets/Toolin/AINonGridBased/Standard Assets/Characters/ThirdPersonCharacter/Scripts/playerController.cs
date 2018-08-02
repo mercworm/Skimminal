@@ -75,6 +75,7 @@ public class playerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.RightArrow))
             {
+                EventManager.TriggerEvent("SpawnTenant");
                 col.GetComponent<Computer>().curTime++;               // adds time while held
                 col.GetComponent<Computer>().loadbar.transform.localScale += new Vector3(0, 0, 0.0066f); //increases the width of the object of that timescale
 
