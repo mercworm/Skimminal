@@ -40,7 +40,6 @@ public class AIController : MonoBehaviour
         for (int i = 0; i < target.Length; i++)
         {
             target[i] = GameObject.FindGameObjectsWithTag(Find)[i].transform;
-
         }
 
         agent.updateRotation = false;
@@ -80,28 +79,42 @@ public class AIController : MonoBehaviour
         this.target = target;
     }
 
-    void OnTriggerStay(Collider other)
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if (other.gameObject == player)
+    //    {
+    //        playerInSight = false;
+    //        Vector3 direction = other.transform.position - transform.position;
+    //        float angle = Vector3.Angle(direction, transform.forward);
+    //
+    //        if (angle < fieldOfView * 0.5f) //if on the side edges of field of view
+    //        {
+    //            RaycastHit hit;
+    //            if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //raycast from about center of the body (to avoid floor)
+    //            {
+    //                if (hit.collider.gameObject == player)
+    //                {
+    //                    Debug.Log("spotted");
+    //                    playerInSight = true;
+    //                    whenSpotted.Invoke();
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
         {
-            playerInSight = false;
-            Vector3 direction = other.transform.position - transform.position;
-            float angle = Vector3.Angle(direction, transform.forward);
-
-            if (angle < fieldOfView * 0.5f) //if on the side edges of field of view
-            {
-                RaycastHit hit;
-                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //raycast from about center of the body (to avoid floor)
-                {
-                    if (hit.collider.gameObject == player)
-                    {
-                        Debug.Log("spotted");
-                        playerInSight = true;
-                        whenSpotted.Invoke();
-                    }
-                }
-            }
+            playerInSight = true;
+            whenSpotted.Invoke();
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, 3);
     }
 }
 
