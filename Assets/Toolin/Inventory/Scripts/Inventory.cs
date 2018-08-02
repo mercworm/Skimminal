@@ -10,10 +10,6 @@ public class Inventory : MonoBehaviour
     public string Mylocation;
     private List<ScriptableItem> objItems;
 
-    public void OnEnable()
-    {
-        EventManager.StartListening("DoneLoading", OnSceneLoad);
-    }
 
     public void Swap(GameObject ObjectsItem)
     {

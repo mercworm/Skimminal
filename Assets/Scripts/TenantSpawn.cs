@@ -18,8 +18,8 @@ public class TenantSpawn : MonoBehaviour {
     private void OnEnable()
     {
         EventManager.StartListening("SpawnTenant", Spawn);
-        EventManager.StartListening("OnTenantCountdown", CountdownStart);
-        EventManager.StartListening("OnLevelComplete", EndEverything);
+        //EventManager.StartListening("OnTenantCountdown", CountdownStart);
+        //EventManager.StartListening("OnLevelComplete", EndEverything);
         EventManager.StartListening("OnNewLevel", ChangeBool);
     }
 

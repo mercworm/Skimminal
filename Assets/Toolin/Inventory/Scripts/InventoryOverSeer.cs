@@ -18,6 +18,8 @@ public class InventoryOverSeer : MonoBehaviour
     [HideInInspector]
     public int index = 0;
 
+    public UnityEngine.Events.UnityEvent onItemsAssigned;
+
     void Start()
     {
         levelName = SceneManager.GetActiveScene().name;
@@ -34,7 +36,8 @@ public class InventoryOverSeer : MonoBehaviour
                 index++; //seperate index for applying to itemlocations 
             }    
         }
-   
+
+        onItemsAssigned.Invoke();
     }
     
     public void ItemsCurrentLocations()

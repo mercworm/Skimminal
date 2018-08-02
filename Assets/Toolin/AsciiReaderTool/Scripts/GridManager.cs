@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 ///Get the array of prefabs to spawn from the AsciiReader component
@@ -23,6 +24,8 @@ public class GridManager : MonoBehaviour
     public Node[,] gridTiles;
 
     Dictionary<Node, Dictionary<Node, int>> paths = new Dictionary<Node, Dictionary<Node, int>>();
+
+    public UnityEvent onFinishedLoading;
 
     void Awake()
     {
@@ -91,7 +94,7 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
-        EventManager.TriggerEvent("DoneLoading");
+        onFinishedLoading.Invoke();
         Debug.Log("done");
 
         //Populate a Dictionary with paths

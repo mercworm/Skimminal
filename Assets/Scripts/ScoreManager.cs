@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour {
 
-    public RelationshipHolder points;
-
     public static string noteName;
 
     private void OnEnable()
@@ -15,7 +13,7 @@ public class ScoreManager : MonoBehaviour {
 
     private void Start()
     {
-        points.ResetPoints();
+
     }
 
     //This function takes care of updating all of the relationship points, depending on which note was posted. 

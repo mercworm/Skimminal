@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 110351844}
   - component: {fileID: 110351843}
   - component: {fileID: 110351842}
+  - component: {fileID: 110351846}
   m_Layer: 0
   m_Name: GridManager
   m_TagString: Untagged
@@ -528,6 +529,22 @@ MonoBehaviour:
   asciiReader: {fileID: 110351842}
   fileReader: {fileID: 110351843}
   tileSize: {x: 1, y: 1, z: 1}
+  onFinishedLoading:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 110351846}
+        m_MethodName: DoIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!4 &110351845
 Transform:
   m_ObjectHideFlags: 0
@@ -541,6 +558,17 @@ Transform:
   m_Father: {fileID: 1317576507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &110351846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110351841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a013e3b3552f3d34e87319d0aad1b781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &120420904
 Prefab:
   m_ObjectHideFlags: 0
@@ -8985,7 +9013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f0b6f6c9f77954bae74cb2efa2b699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: {fileID: 11400000, guid: d1823720d329125498a2a295c37d2578, type: 2}
 --- !u!1001 &1326003113
 Prefab:
   m_ObjectHideFlags: 0
