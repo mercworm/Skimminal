@@ -43,4 +43,16 @@ public class GameManager : MonoBehaviour {
         StopCoroutine(TempTwo());
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene("Menu1");
+        }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
 }
