@@ -10,6 +10,10 @@ public class ButtonLevelCompleteHandler : MonoBehaviour {
     private void OnEnable()
     {
         thisButton = GetComponent<Button>();
+
+        var pref = PlayerPrefs.GetInt(thisButton.name, 0);
+        Debug.Log(pref);
+
         if (PlayerPrefs.GetInt(thisButton.name, 0)== 1)
         {
             thisButton.interactable = false;

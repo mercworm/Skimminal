@@ -19,13 +19,13 @@ public class GameManager : MonoBehaviour {
         {
             DontDestroyOnLoad(gameObject);
             manager = this;
+            PlayerPrefs.DeleteAll();
         }
         else if (manager != this)
         {
             Destroy(gameObject);
         }
 
-        PlayerPrefs.DeleteAll();
     }
 
     public void TempGameOver ()
